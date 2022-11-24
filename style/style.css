@@ -1,42 +1,162 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
 }
 
-.pc-header .centerwrap {
-  margin: 0 auto;
+.header {
+  padding: 0 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 990;
+  background-color: #fff;
+}
+
+.header nav.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.pc-header .centerwrap .find label {
-  position: relative;
+.header nav.navbar .mainmenu-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.pc-header .centerwrap .search-bar {
-  border: 1px solid #6b95ac;
-  border-radius: 30px;
-  background-color: #ffff;
-  font-size: 12px;
-  width: 100px;
-  padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
+.header nav.navbar .mainmenu-wrap .social-icon {
+  font-size: 0;
+  list-style: none;
+  display: block;
 }
 
-.pc-header .centerwrap .search-btn {
-  border-left: none;
-  font-size: 12px;
-  cursor: pointer;
+.header nav.navbar .mainmenu-wrap .social-icon ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header nav.navbar .mainmenu-wrap .social-icon ul li {
+  padding: 0 15px;
   display: inline-block;
-  right: 2px;
-  line-height: 27px;
-  position: absolute;
-  height: 27px;
-  width: 32px;
-  text-align: center;
-  color: #6b95ac;
+}
+
+.header nav.navbar .mainmenu-wrap .social-icon ul li a img {
+  width: 20px;
+  height: 20px;
+}
+
+.header nav.navbar .mainmenu-wrap .lang-switch {
+  padding: 0 40px;
+}
+
+.header nav.navbar .mainmenu-wrap .lang-switch a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: Roboto, Helvetica Neue, Helvetica, verdana, Microsoft JhengHei, 微軟正黑體, Arial, sans-serif;
+  text-decoration: none;
+  color: #999;
+}
+
+.header nav.navbar .mainmenu-wrap .menuBtn {
+  font-size: 30px;
+  line-height: 1;
+  -webkit-transition: -webkit-box-shadow 0.15s ease-in-out;
+  transition: -webkit-box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.header .banner {
+  width: 100%;
+  height: 400vh;
+  padding: 0;
+  margin: 0;
+}
+
+section.news {
+  padding-top: 25px;
+  padding: 0px 30px;
+}
+
+section.news .title {
+  padding-bottom: 54px;
+}
+
+section.news .title h2 {
+  font-size: 60px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+section.news .title h3 {
+  font-size: 20px;
+  font-weight: 900;
+  display: inline-block;
+}
+
+section.news .news-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+section.news .news-row .item-header1,
+section.news .news-row .item-header2,
+section.news .news-row .item-header3 {
+  margin-bottom: 10px;
+}
+
+section.news .news-row .news-item {
+  padding: 0 8px;
+}
+
+section.news .news-row .news-item .card {
+  overflow: hidden;
+}
+
+section.news .news-row .news-item img {
+  width: 475px;
+  height: 360px;
+}
+
+section.news .news-row .news-item:hover .item-header1 {
+  color: #003ccc;
+}
+
+section.news .news-row .news-item:hover .item-header2 {
+  color: #0099ff;
+}
+
+section.news .news-row .news-item:hover .item-header3 {
+  color: #e7c100;
+}
+
+section.news .news-row .news-item:hover img {
+  margin: 0 auto;
+  display: block;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 /*# sourceMappingURL=style.css.map */
